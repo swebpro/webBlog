@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Montserrat;
+}
+
+h1 {
+  position: absolute;
+  background-color: white;
+  width: 240px;
+  margin: 0 auto;
+  bottom: 2px;
+  left: 50%;
+  margin-left: -120px;
+  font-size: 25px;
+  line-height: 1.5;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.post img, .img-wrapper img {
+  height: 300px;
+  width: 300px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+}
+
+.footer {
+  background-color: brown;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.row-container {
+  display: flex;
+  height: 1400px;
+  width: 1000px;
+  margin: 10px auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-container {
+  width: 500px;
+  padding: 20px;
+  background-color: #fef1ef;
+  margin-left: 15px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  margin: 0 0 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.card-content {
+  margin: 10px;
+}
+label {
+  text-align: center;
+  font-size: 10px;
+  width: 100%;
+  display: block;
+}
+h2:hover,
+p:hover {
+  color: brown;
+}
+
+.email-form-content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: #bc5a3a;
+}
+
+.email-form-content h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.email-cntr label {
+  text-align: left;
+  font-size: 20px;
+}
+
+.email-cntr input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 100%;
+  height: 40px;
+}
+
+.sub {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sub input {
+  height: 40px;
+  width: 200px;
+}
+
+.row-two {
+  margin: 40px 0 20px;
+}
+
+.instagram-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.instagram-gallery img {
+  width: 110px;
+  margin-bottom: 10px;
+}
+.social-icons{
+  display:flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover {
+  background-color: brown;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.sec-sub-btn input{
+  background-color: brown;
+  width:100px;
+  height:40px;
+  text-align:center ;
+  color:white;
+}
+section{
+  min-height:100vh;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-wrapper {
+    width: 100%;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .row-container {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .sec-sub-btn {
+    text-align: center;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 20px 0 0;
+    box-sizing: border-box;
+  }
+
+  .instagram-gallery {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+  }
+
+  .instagram-gallery img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .email-cntr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 15%;
+  }
+
+  .email-cntr label {
+    box-sizing: border-box;
+  }
+
+  .email-cntr input  {
+    box-sizing: border-box;
+  }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .gallery-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .row-container {
+    width: 100%;
+  }
+
+  .sec-sub-btn {
+    text-align: center;
+  }
+
+  .row-container {
+    height: auto;
+  }
+}

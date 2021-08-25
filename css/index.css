@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  background-color:black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover {
+  background-color: brown;
+}
